@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -10,7 +11,8 @@
     --hover-color:#ffd801;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'M PLUS Rounded 1c';
+    /* , Arial, Helvetica, sans-serif; */
 }
 nav{
     background: white;
@@ -35,13 +37,12 @@ nav ul li{
     line-height: 100px;
     margin: 0 5px;
 }
-nav ul li a{
+.pages li a{
     color: var(--text-color);
     border-radius: 10px;
     font-size:30px;
     padding: 7px 13px;
     text-transform: uppercase;
-    font-weight: bold;
 }
 a.active,.btn:hover{
     background: var(--hover-color);
@@ -74,7 +75,7 @@ a.active,.btn:hover{
     .checkbtn{
         display: block;   
     }
-    ul{
+    .pages{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -84,12 +85,12 @@ a.active,.btn:hover{
         text-align: center;
         transition: all .5s;
     }
-    nav ul li{
+    .pages li{
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    nav ul li a{
+    .pages li a{
         font-size: 20px;
     }
     .btn:hover,.btn.activate{
@@ -99,4 +100,49 @@ a.active,.btn:hover{
     #check:checked ~ ul{
         left: 0;
     }
+}
+.container{
+    width: 100%;
+    padding: 30px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    gap: 35px;
+    background-image: url("MainBackGround3.png");
+    background-size: 100%;
+    background-position:center;
+}
+.game{
+    background-color: white;
+    border-radius: 35px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 8px 8px 0 rgb(45%, 0%, 67%, 25%);
+    gap: 17.5px;
+    padding: 15px;
+}
+.gameIcon{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 0 rgb(45%, 0%, 67%, 15%);
+}
+.game h1{
+    color: var(--text-color);
+    font-size: 25px;
+}
+.game:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.googleplay{
+    /* width: 100%; */
+    height: 65px;
+    border-radius: 20px;
 }
