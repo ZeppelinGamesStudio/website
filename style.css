@@ -88,8 +88,8 @@ a.active,.btn:hover{
     nav ul li a{
         font-size: 20px;
     }
-    a:hover,a.activate{
-        background: none;
+    .btn:hover,.btn.activate{
+        background: var(--hover-color);
         color: var(--text-color);
     }
     #check:checked ~ ul{
@@ -106,7 +106,6 @@ a.active,.btn:hover{
     grid-template-columns: repeat(auto-fill, minmax(250px, auto));
     gap: 35px;
     background-image: url("MainBackGround3.png");
-    /* background-repeat: no-repeat; */
     background-size: 100%;
     background-position:center;
 }
@@ -118,7 +117,7 @@ a.active,.btn:hover{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    box-shadow: 10px 10px 0 rgb(45%, 0%, 67%, 25%);
+    box-shadow: 8px 8px 0 rgb(45%, 0%, 67%, 25%);
     gap: 17.5px;
     padding: 20px;
     margin-top: 45px;
