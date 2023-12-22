@@ -11,8 +11,7 @@
     --hover-color:#ffd801;
 }
 body{
-    font-family: 'M PLUS Rounded 1c';
-    /* , Arial, Helvetica, sans-serif; */
+    font-family: 'M PLUS Rounded 1c', Arial;
 }
 nav{
     background: white;
@@ -22,7 +21,7 @@ nav{
 .logo{
     height: 100%;
     line-height: 100px;
-    margin: 0 110px;
+    margin-left: 110px;
 }
 .logo.active,.logo:hover{
     transform: scale(1.05);
@@ -91,7 +90,7 @@ a.active,.btn:hover{
         line-height: 30px;
     }
     .pages li a{
-        font-size: 20px;
+        font-size: 30px;
     }
     .btn:hover,.btn.activate{
         background: var(--hover-color);
@@ -146,6 +145,21 @@ a.active,.btn:hover{
     height: 65px;
     border-radius: 20px;
 }
+@media (max-width: 858px){
+    .container{
+        grid-template-columns: repeat(auto-fill, minmax(185px, auto));
+    }
+    .game{
+        padding: 12px;
+    }
+    .game h1{
+        font-size: 20px;
+    }
+    .googleplay{
+        height: 50px;
+    }
+}
+
 .logo1{
     height: 70px;
     line-height: 100px;
@@ -158,10 +172,25 @@ a.active,.btn:hover{
 .txt{
     color: var(--text-color);
     font-size:30px;
-    padding-left: 80px;
+    margin-left: 80px;
     font-weight: bold;
     float: left;
 }
 .socialMedia{
     padding: 20px;
+}
+@media (max-width: 858px){
+    .logo1{
+        height: 50px;
+    }
+    .txt{
+        font-size: 20px;
+        margin-left: 25px;
+    }
+    .socialMediaUl{
+        margin-right: 25px;
+    }
+    .socialMediaUl li{
+        margin: 0 2px;
+    }
 }

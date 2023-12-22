@@ -11,7 +11,7 @@
     --hover-color:#ffd801;
 }
 body{
-    font-family: 'M PLUS Rounded 1c';
+    font-family: 'M PLUS Rounded 1c', Arial;
     /* , Arial, Helvetica, sans-serif; */
 }
 nav{
@@ -117,8 +117,6 @@ main h1{
 @media (max-width: 1000px){
     main{
         padding: 30px;
-        padding-left: 50px;
-        padding-right: 50px;
     }
     main h2{
         font-size: 20px;
