@@ -118,6 +118,9 @@ a.active,.btn:hover{
         top: 70px;
     }
 }
+main h1{
+    color: var(--text-color);
+}
 
 @media (max-width: 1000px){
     main{
