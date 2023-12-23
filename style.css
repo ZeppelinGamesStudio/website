@@ -160,28 +160,26 @@ a.active,.btn:hover{
         height: 50px;
     }
 }
-
-
 @media (max-width: 600px){
     .container{
         gap: 20px;
-        grid-template-columns: repeat(auto-fill, minmax(140px, auto));
+        padding: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, auto));
     }
     .game{
         padding: 7px;
     }
     .game h1{
-        font-size: 13px;
+        font-size: 17px;
     }
     .googleplay{
-        height: 35px;
+        height: 40px;
         border-radius: 15px;
     }
     .gameIcon{
         border-radius: 25px;
     }
 }
-
 
 .logo1{
     height: 70px;
