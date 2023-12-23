@@ -51,7 +51,7 @@ a.active,.btn:hover{
     font-size: 30px;
     color: var(--text-color);
     float: right;
-    line-height: 80px;
+    line-height: 100px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
@@ -71,7 +71,7 @@ a.active,.btn:hover{
 }
 @media (max-width: 858px){
     .checkbtn{
-        display: block;   
+        display: block;  
     }
     .navigationBar ul{
         position: fixed;
@@ -104,6 +104,10 @@ a.active,.btn:hover{
         background: white;
         height: 70px;
         width: 100%;
+    }
+    .checkbtn{
+
+        line-height: 70px; 
     }
     .logo{
         height: 100%;

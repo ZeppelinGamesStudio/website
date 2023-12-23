@@ -12,9 +12,8 @@
 }
 body{
     font-family: 'M PLUS Rounded 1c', Arial;
-    /* , Arial, Helvetica, sans-serif; */
 }
-nav{
+.navigationBar{
     background: white;
     height: 100px;
     width: 100%;
@@ -28,16 +27,16 @@ nav{
     transform: scale(1.05);
     transition: 0.5s;
 }
-nav ul{
+.navigationBar ul{
     float: right;
     margin-right: 80px;
 }
-nav ul li{
+.navigationBar ul li{
     display: inline-block;
     line-height: 100px;
     margin: 0 5px;
 }
-.pages li a{
+.navigationBar ul li a{
     color: var(--text-color);
     border-radius: 10px;
     font-size:30px;
@@ -52,14 +51,13 @@ a.active,.btn:hover{
     font-size: 30px;
     color: var(--text-color);
     float: right;
-    line-height: 80px;
+    line-height: 100px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
 }
 #check{
     display: none;
-
 }
 @media (max-width: 952px)
 {
@@ -71,23 +69,11 @@ a.active,.btn:hover{
         font-size: 16px;
     }
 }
-main{
-    padding: 30px;
-    padding-left: 200px;
-    padding-right: 200px;
-}
-main h2{
-    color: black;
-    padding: 10px;
-}
-main h1{
-    color: var(--text-color);
-}
 @media (max-width: 858px){
     .checkbtn{
-        display: block;   
+        display: block;  
     }
-    .pages{
+    .navigationBar ul{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -97,12 +83,12 @@ main h1{
         text-align: center;
         transition: all .5s;
     }
-    .pages li{
+    .navigationBar ul li{
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    .pages li a{
+    .navigationBar ul li a{
         font-size: 30px;
     }
     .btn:hover,.btn.activate{
@@ -111,6 +97,25 @@ main h1{
     }
     #check:checked ~ ul{
         left: 0;
+    }
+}
+@media (max-width: 600px){
+    .navigationBar{
+        background: white;
+        height: 70px;
+        width: 100%;
+    }
+    .checkbtn{
+
+        line-height: 70px; 
+    }
+    .logo{
+        height: 100%;
+        line-height: 100px;
+        margin-left: 30px;
+    }
+    .navigationBar ul{
+        top: 70px;
     }
 }
 
