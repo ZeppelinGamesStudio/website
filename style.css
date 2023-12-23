@@ -147,7 +147,7 @@ a.active,.btn:hover{
 }
 @media (max-width: 858px){
     .container{
-        grid-template-columns: repeat(auto-fill, minmax(185px, auto));
+        grid-template-columns: repeat(auto-fill, minmax(180px, auto));
     }
     .game{
         padding: 12px;
@@ -156,7 +156,7 @@ a.active,.btn:hover{
         font-size: 20px;
     }
     .googleplay{
-        height: 50px;
+        height: 45px;
     }
 }
 
