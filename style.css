@@ -147,16 +147,36 @@ a.active,.btn:hover{
 }
 @media (max-width: 858px){
     .container{
-        grid-template-columns: repeat(auto-fill, minmax(180px, auto));
+        grid-template-columns: repeat(auto-fill, minmax(185px, auto));
     }
     .game{
         padding: 12px;
+        gap: 10px;
     }
     .game h1{
         font-size: 20px;
     }
     .googleplay{
-        height: 45px;
+        height: 50px;
+    }
+}
+@media (max-width: 600px){
+    .container{
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+    }
+    .game{
+        padding: 7px;
+    }
+    .game h1{
+        font-size: 17px;
+    }
+    .googleplay{
+        height: 40px;
+        border-radius: 15px;
+    }
+    .gameIcon{
+        border-radius: 25px;
     }
 }
 
