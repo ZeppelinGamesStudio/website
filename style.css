@@ -203,7 +203,7 @@ a.active,.btn:hover{
 
 
 .logo1{
-    height: 70px;
+    height: 100%;
     line-height: 100px;
     border-radius: 20px;
 }
@@ -213,36 +213,53 @@ a.active,.btn:hover{
 }
 .txt{
     color: var(--text-color);
-    font-size:30px;
-    margin-left: 80px;
+    font-size:25px;
+    margin-left: 50px;
     font-weight: bold;
     float: left;
 }
 .socialMedia{
-    padding: 20px;
+    padding: 15px;
+    height: 100px;
+    width: 100%;
 }
 .socialMedia ul{
+    height: 100%;
     float: right;
-    margin-right: 80px;
+    margin-right: 50px;
 }
 .socialMedia ul li{
+    height: 100%;
     display: inline-block;
-    line-height: 100px;
-    margin: 0 5px;
+    line-height: 70px;
 }
 @media (max-width: 858px){
+    .socialMedia{
+        height: 80px;
+    }
     .logo1{
-        height: 35px;
+        border-radius: 15px;
+    }
+    .txt{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .socialMedia ul{
+        margin-right: 30px;
+    }
+}
+@media (max-width: 600px){
+    .socialMedia{
+        height: 70px;
+    }
+    .logo1{
         border-radius: 10px;
     }
     .txt{
-        font-size: 18px;
-        margin-left: 5px;
+        font-size: 15px;
+        margin-left: 0px;
     }
     .socialMedia ul{
-        margin-right: 5px;
-    }
-    .socialMedia ul li{
-        margin: 0 2px;
+        margin-right: 0px;
     }
 }
