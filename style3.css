@@ -22,7 +22,7 @@ nav{
 .logo{
     height: 100%;
     line-height: 100px;
-    margin: 0 110px;
+    margin-left: 110px;
 }
 .logo.active,.logo:hover{
     transform: scale(1.05);
