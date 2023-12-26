@@ -1,0 +1,61 @@
+.logo1{
+    height: 100%;
+    line-height: 100px;
+    border-radius: 20px;
+}
+.logo1.active,.logo1:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.txt{
+    color: var(--text-color);
+    font-size:25px;
+    margin-left: 50px;
+    font-weight: bold;
+    float: left;
+}
+.socialMedia{
+    padding: 15px;
+    height: 100px;
+    width: 100%;
+}
+.socialMedia ul{
+    height: 100%;
+    float: right;
+    margin-right: 50px;
+}
+.socialMedia ul li{
+    height: 100%;
+    display: inline-block;
+    line-height: 70px;
+}
+@media (max-width: 858px){
+    .socialMedia{
+        height: 80px;
+    }
+    .logo1{
+        border-radius: 15px;
+    }
+    .txt{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .socialMedia ul{
+        margin-right: 30px;
+    }
+}
+@media (max-width: 600px){
+    .socialMedia{
+        height: 70px;
+    }
+    .logo1{
+        border-radius: 10px;
+    }
+    .txt{
+        font-size: 15px;
+        margin-left: 0px;
+    }
+    .socialMedia ul{
+        margin-right: 0px;
+    }
+}
