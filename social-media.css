@@ -9,7 +9,7 @@
 }
 .txt{
     color: var(--text-color);
-    font-size:25px;
+    font-size:30px;
     margin-left: 50px;
     font-weight: bold;
     float: left;
@@ -37,7 +37,7 @@
         border-radius: 15px;
     }
     .txt{
-        font-size: 20px;
+        font-size: 27px;
         margin-left: 30px;
     }
     .socialMedia ul{
@@ -52,7 +52,7 @@
         border-radius: 10px;
     }
     .txt{
-        font-size: 15px;
+        font-size: 23px;
         margin-left: 0px;
     }
     .socialMedia ul{
