@@ -3,16 +3,24 @@ main{
     padding-left: 70px;
     padding-right: 70px;
 }
+main h2{
+    font-size: 25px;
+    padding: 10px;
+}
 main h1{
     color: var(--text-color);
+    font-size: 30px;
 }
 
 @media (max-width: 1000px){
     main{
+        padding-left: 0px;
+        padding-right: 0px;
         padding: 30px;
     }
     main h2{
         font-size: 20px;
+        padding: 5px;
     }
     main h1{
         font-size: 23px;
