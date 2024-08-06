@@ -1,17 +1,20 @@
 .container{
-    width: 100%;
-    padding: 30px;
-    padding-top: 75px;
-    padding-bottom: 75px;
-    margin-right: auto;
-    margin-left: auto;
+    width: calc(100% - 30px);
+    padding: 50px 30px;
+
+    margin: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
     display: grid;
     justify-content: center;
+    /* align-items: center; */
     grid-template-columns: repeat(auto-fill, minmax(250px, auto));
     gap: 35px;
-    background-image: url("MainBackGround3.png");
-    background-size: 100%;
+    background-image: url("BgPattern.png");
+    background-size: 35%;
     background-position:center;
+    border-radius: 40px;  /* Added rounded corners */
 }
 .game{
     background-color: white;
@@ -43,23 +46,30 @@
     height: 65px;
     border-radius: 20px;
 }
-@media (max-width: 858px){
-    .container{
+@media (max-width: 858px) {
+    .container {
+        background-size: 65%;
         grid-template-columns: repeat(auto-fill, minmax(185px, auto));
+        padding: 30px 15px;
+        gap: 20px;
     }
-    .game{
+
+    .game {
         padding: 12px;
-        gap: 10px;
+        gap: 15px;
     }
-    .game h1{
+
+    .game h1 {
         font-size: 20px;
     }
-    .googleplay{
+
+    .googleplay {
         height: 50px;
     }
 }
 @media (max-width: 600px){
     .container{
+        background-size: 100%;
         gap: 10px;
         padding: 15px;
         grid-template-columns: repeat(auto-fill, minmax(150px, auto));

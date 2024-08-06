@@ -1,61 +1,77 @@
-.logo1{
-    height: 100%;
-    line-height: 100px;
-    border-radius: 20px;
-}
-.logo1.active,.logo1:hover{
-    transform: scale(1.05);
-    transition: 0.5s;
-}
-.txt{
-    color: var(--text-color);
-    font-size:30px;
-    margin-left: 50px;
-    font-weight: bold;
-    float: left;
-}
-.socialMedia{
+.socialMedia {
     padding: 15px;
-    height: 100px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.socialMedia ul{
-    height: 100%;
-    float: right;
-    margin-right: 50px;
+
+.txt {
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
 }
-.socialMedia ul li{
-    height: 100%;
-    display: inline-block;
-    line-height: 70px;
+
+.socialMedia ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
-@media (max-width: 858px){
-    .socialMedia{
-        height: 80px;
+
+.socialMedia ul li {
+    margin-left: 25px;
+}
+
+.logo1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 30%;
+    transition: transform 0.3s ease;
+}
+
+.logo1:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 858px) {
+    .socialMedia {
+        padding: 10px;
     }
-    .logo1{
-        border-radius: 15px;
+    
+    .txt {
+        font-size: 26px;
     }
-    .txt{
-        font-size: 27px;
-        margin-left: 30px;
-    }
-    .socialMedia ul{
-        margin-right: 30px;
+    
+    .logo1 {
+        height: 45px;
+        width: 45px;
     }
 }
-@media (max-width: 600px){
-    .socialMedia{
-        height: 70px;
+
+@media (max-width: 600px) {
+    .socialMedia {
+        flex-direction: column;
+        height: auto;
     }
-    .logo1{
-        border-radius: 10px;
+    
+    .txt {
+        font-size: 22px;
+        margin-bottom: 15px;
     }
-    .txt{
-        font-size: 23px;
-        margin-left: 0px;
+    
+    .socialMedia ul {
+        justify-content: center;
     }
-    .socialMedia ul{
-        margin-right: 0px;
+    
+    .socialMedia ul li {
+        margin: 0 12px;
+    }
+    
+    .logo1 {
+        height: 40px;
+        width: 40px;
     }
 }

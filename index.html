@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="Icon.png">
         <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="welcome-parents.css">
         <link rel="stylesheet" href="our-games.css">
         <link rel="stylesheet" href="social-media.css">
         <script src="https://kit.fontawesome.com/8f2899b37a.js" crossorigin="anonymous"></script>
@@ -25,43 +26,20 @@
                 <li><a class="btn" href="about-us.html">About Us</a></li>
             </ul>
         </nav>
-        <div class="container">
-            <div>
-                <a class="game" href="https://play.google.com/store/apps/details?id=com.ZeppelinGames.Coloring" target="_blank">
-                    <img class="gameIcon" src="5.png">
-                    <h1>Kids Coloring And Drawing</h1>
-                    <img class="googleplay" src="google-play-store-png.png">
-                </a>
-            </div>
-            <div>
-                <a class="game" href="https://play.google.com/store/apps/details?id=com.ZeppelinGames.HouseBuilderForKids" target="_blank">
-                    <img class="gameIcon" src="4.png">
-                    <h1>House Builder For Kids</h1>
-                    <img class="googleplay" src="google-play-store-png.png">
-                </a>
-            </div>
-            <div>
-                <a class="game" href="https://play.google.com/store/apps/details?id=com.ZeppelinGames.KidsPuzzlesGame" target="_blank">
-                    <img class="gameIcon" src="3.png">
-                    <h1>Kids Puzzles Game</h1>
-                    <img class="googleplay" src="google-play-store-png.png">
-                </a>
-            </div>
-            <div>
-                <a class="game" href="https://play.google.com/store/apps/details?id=com.zeppelingames.findthedifference" target="_blank">
-                    <img class="gameIcon" src="2.png">
-                    <h1>Find The Differences</h1>
-                    <img class="googleplay" src="google-play-store-png.png">
-                </a>
-            </div>
-            <div>
-                <a class="game" href="https://play.google.com/store/apps/details?id=com.zeppelingames.mathkidspuzzle" target="_blank">
-                    <img class="gameIcon" src="1.png">
-                    <h1>Math Kids Puzzle</h1>
-                    <img class="googleplay" src="google-play-store-png.png">
-                </a>
+        <div class="welcome-parents">
+            <h1>Welcome, Parents!</h1>
+            <p>We're excited to have you explore our collection of educational games designed for children. Our games are fun, engaging, and promote learning in various subjects.</p>
+            <div class="button-container">
+                <a href="about-us.html" class="welcome-button about-button">About Us</a>
             </div>
         </div>
+        <div class="container" id="game-container"></div>
+        <script src="game-list.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                initGameList('game-container');
+            });
+        </script>
         <nav class="socialMedia">
             <h1 class="txt">Follow Us !</h1>
             <ul>
