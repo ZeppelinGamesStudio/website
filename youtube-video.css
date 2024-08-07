@@ -1,5 +1,8 @@
 .video-container {
-    background-color: #ffa5d6;
+    background-image: url("BgPattern2.png");
+    background-size: 35%;
+    background-position:center;
+    
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -49,6 +52,7 @@
 
 @media (max-width: 858px) {
     .video-container {
+        background-size: 65%;
         padding: 20px;
     }
 
@@ -68,6 +72,7 @@
 
 @media (max-width: 600px) {
     .video-container {
+        background-size: 100%;
         padding: 15px;
     }
 

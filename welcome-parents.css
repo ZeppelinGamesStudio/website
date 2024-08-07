@@ -1,5 +1,8 @@
 .welcome-parents {
-    background-color: #ffd801; /* Light blue background */
+    background-image: url("BgPattern3.png");
+    background-size: 35%;
+    background-position:center;
+    
     padding: 40px 30px;
     text-align: center;
     margin: 15px;
@@ -47,6 +50,7 @@
 
 @media (max-width: 858px) {
     .welcome-parents {
+        background-size: 65%;
         padding: 30px 20px;
     }
 
@@ -66,6 +70,7 @@
 
 @media (max-width: 600px) {
     .welcome-parents {
+        background-size: 100%;
         padding: 20px 15px;
     }
 
