@@ -1,10 +1,10 @@
 const games = [
+    {name : "Math Kids Puzzle", icon : "1.png", link : "https://play.google.com/store/apps/details?id=com.zeppelingames.mathkidspuzzle"},
     {name : "Memory Game For Kids", icon : "6.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.MemoryGameForKids"},
     {name : "Kids Coloring And Drawing", icon : "5.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.Coloring"},
-    {name : "House Builder For Kids", icon : "4.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.HouseBuilderForKids"},
     {name : "Kids Puzzles Game", icon : "3.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.KidsPuzzlesGame"},
+    {name : "House Builder For Kids", icon : "4.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.HouseBuilderForKids"},
     {name : "Find The Differences", icon : "2.png", link : "https://play.google.com/store/apps/details?id=com.zeppelingames.findthedifference"},
-    {name : "Math Kids Puzzle", icon : "1.png", link : "https://play.google.com/store/apps/details?id=com.zeppelingames.mathkidspuzzle"},
 ];
 
 function createGameHTML(game) {
