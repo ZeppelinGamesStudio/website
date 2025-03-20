@@ -28,8 +28,19 @@ main h1{
 }
 
 strong{
-    font-size: 20px;
+    font-size: 24px;
+    padding: 10px;
 }
 p{
-    font-size: 17px;
+    font-size: 19px;
+    padding: 8px;
+    padding-left: 10px;
+}
+li{
+    font-size: 19px;
+    padding: 3px;
+}
+a{
+    font-size: 21px;
+    padding-left: 30px;
 }
