@@ -1,5 +1,6 @@
 const games = [
     {name : "Math Kids Puzzle", icon : "1.png", link : "https://play.google.com/store/apps/details?id=com.zeppelingames.mathkidspuzzle"},
+    {name : "Coloring Game for Toddlers!", icon : "7.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.KidsColoring"},
     {name : "Memory Game For Kids", icon : "6.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.MemoryGameForKids"},
     {name : "Kids Coloring And Drawing", icon : "5.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.Coloring"},
     {name : "Kids Puzzles Game", icon : "3.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.KidsPuzzlesGame"},
