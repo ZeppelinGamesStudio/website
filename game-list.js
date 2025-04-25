@@ -1,11 +1,11 @@
 const games = [
-    {name : "Math Kids Puzzle", icon : "Games/1.png", link : "https://play.google.com/store/apps/details?id=com.zeppelingames.mathkidspuzzle"},
-    {name : "Coloring Game for Toddlers!", icon : "Games/7.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.KidsColoring"},
-    {name : "Memory Game For Kids", icon : "Games/6.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.MemoryGameForKids"},
-    {name : "Kids Coloring And Drawing", icon : "Games/5.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.Coloring"},
-    {name : "Kids Puzzles Game", icon : "Games/3.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.KidsPuzzlesGame"},
-    {name : "House Builder For Kids", icon : "Games/4.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.HouseBuilderForKids"},
-    {name : "Find The Differences", icon : "Games/2.png", link : "https://play.google.com/store/apps/details?id=com.zeppelingames.findthedifference"},
+    {name : "Math Kids Puzzle", icon : "https://raw.githubusercontent.com/ZeppelinGamesStudio/OurGames/main/1.png", link : "https://play.google.com/store/apps/details?id=com.zeppelingames.mathkidspuzzle"},
+    {name : "Coloring Game for Toddlers!", icon : "https://raw.githubusercontent.com/ZeppelinGamesStudio/OurGames/main/7.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.KidsColoring"},
+    {name : "Memory Game For Kids", icon : "https://raw.githubusercontent.com/ZeppelinGamesStudio/OurGames/main/6.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.MemoryGameForKids"},
+    {name : "Kids Coloring And Drawing", icon : "https://raw.githubusercontent.com/ZeppelinGamesStudio/OurGames/main/5.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.Coloring"},
+    {name : "Kids Puzzles Game", icon : "https://raw.githubusercontent.com/ZeppelinGamesStudio/OurGames/main/3.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.KidsPuzzlesGame"},
+    {name : "House Builder For Kids", icon : "https://raw.githubusercontent.com/ZeppelinGamesStudio/OurGames/main/4.png", link : "https://play.google.com/store/apps/details?id=com.ZeppelinGames.HouseBuilderForKids"},
+    {name : "Find The Differences", icon : "https://raw.githubusercontent.com/ZeppelinGamesStudio/OurGames/main/2.png", link : "https://play.google.com/store/apps/details?id=com.zeppelingames.findthedifference"},
 ];
 
 function createGameHTML(game) {
