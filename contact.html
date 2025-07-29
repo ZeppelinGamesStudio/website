@@ -76,8 +76,54 @@
             </div>
         </div>
     </section>
-
+ 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script>
+        // Enable submit button when reCAPTCHA is completed
+        function enableSubmitBtn() {
+            document.getElementById('submitBtn').disabled = false;
+            document.getElementById('captchaError').style.display = 'none';
+        }
+
+        // Form submission validation
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            const recaptchaResponse = grecaptcha.getResponse();
+            
+            if (!recaptchaResponse) {
+                e.preventDefault();
+                document.getElementById('captchaError').style.display = 'block';
+                document.getElementById('submitBtn').disabled = true;
+                
+                // Scroll to error message
+                document.getElementById('captchaError').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+                
+                return false;
+            }
+            
+            // Show loading state
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            return true;
+        });
+
+        // Reset reCAPTCHA and button state if reCAPTCHA expires
+        function onRecaptchaExpired() {
+            document.getElementById('submitBtn').disabled = true;
+        }
+
+        // Optional: Reset form after successful submission
+        window.addEventListener('beforeunload', function() {
+            if (typeof grecaptcha !== 'undefined') {
+                grecaptcha.reset();
+            }
+        });
+    </script>
 
 </body>
 </html>
