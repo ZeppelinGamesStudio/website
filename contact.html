@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact - ZeppelinGames</title>
+    <meta name="description" content="Contact ZeppelinGames support and get your questions answered quickly!" />
+    <link rel="icon" href="Icon.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <i class="fas fa-shield-alt"></i>
+        Trusted by Parents Worldwide • 100% Safe & Kid-Friendly
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html#home" class="logo">
+                <i class="fas fa-gamepad"></i>
+                ZeppelinGames
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#games">Games</a></li>
+                <li><a href="index.html#safety">Safety</a></li>
+                <li><a href="index.html#videos">Videos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">
+                    Have a question or need support? Reach out and our team will get back to you as soon as possible!
+                </p>
+            </div>
+            <div class="contact-content" style="max-width:600px; margin:0 auto;">
+                <form class="contact-form" style="background: var(--gray-50); padding:2rem; border-radius: var(--border-radius); box-shadow:var(--shadow-md);"
+                    action="https://formsubmit.co/zeppelingames.contact@gmail.com"
+                    method="POST">
+                    <input type="hidden" name="_next" value="thank-you.html" />
+                    <div style="display:flex; flex-direction:column; gap:1.5rem;">
+                        <div>
+                            <label for="name" style="font-weight:600; color:var(--text-dark)">Name <span style="font-weight:400;">(optional)</span></label>
+                            <input type="text" id="name" name="name" placeholder="Your name"
+                                style="width:100%; padding:0.75rem; margin-top:0.5rem; border-radius:8px; border:1px solid var(--gray-200); font-size:1rem;" />
+                        </div>
+                        <div>
+                            <label for="email" style="font-weight:600; color:var(--text-dark);">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com"
+                                style="width:100%; padding:0.75rem; margin-top:0.5rem; border-radius:8px; border:1px solid var(--gray-200); font-size:1rem;" />
+                        </div>
+                        <div>
+                            <label for="message" style="font-weight:600; color:var(--text-dark);">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"
+                                style="width:100%; padding:0.75rem; margin-top:0.5rem; border-radius:8px; border:1px solid var(--gray-200); font-size:1rem; resize: none;"></textarea>
+                        </div>
+                        <button type="submit" class="cta-button" style="width:100%;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
