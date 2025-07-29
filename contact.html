@@ -49,6 +49,8 @@
                     method="POST">
                     <input type="hidden" name="_redirect" value="https://zeppelingamesstudio.com/thank-you" />
                     <input type="hidden" name="_append" value="false" />
+                    <input type="hidden" name="_captcha" value="true" />
+
                     <div style="display:flex; flex-direction:column; gap:1.5rem;">
                         <div>
                             <label for="name" style="font-weight:600; color:var(--text-dark)">Name <span style="font-weight:400;">(optional)</span></label>
@@ -65,6 +67,7 @@
                             <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"
                                 style="width:100%; padding:0.75rem; margin-top:0.5rem; border-radius:8px; border:1px solid var(--gray-200); font-size:1rem; resize: none;"></textarea>
                         </div>
+                        <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY" style="margin-top: 1rem;"></div>
                         <button type="submit" class="cta-button" style="width:100%;">
                             <i class="fas fa-paper-plane"></i> Send Message
                         </button>
@@ -73,6 +76,8 @@
             </div>
         </div>
     </section>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </body>
 </html>
