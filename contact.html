@@ -44,12 +44,12 @@
                 </p>
             </div>
             <div class="contact-content" style="max-width:600px; margin:0 auto;">
-                <form class="contact-form" style="background: var(--gray-50); padding:2rem; border-radius: var(--border-radius); box-shadow:var(--shadow-md);"
+                <form class="contact-form" id="contactForm" style="background: var(--gray-50); padding:2rem; border-radius: var(--border-radius); box-shadow:var(--shadow-md);"
                     action="https://submit-form.com/61CH08MvK"
                     method="POST">
                     <input type="hidden" name="_redirect" value="https://zeppelingamesstudio.com/thank-you" />
                     <input type="hidden" name="_append" value="false" />
-                    <input type="hidden" name="_captcha" value="true" />
+                    <input type="hidden" name="_captcha" value="false" />
 
                     <div style="display:flex; flex-direction:column; gap:1.5rem;">
                         <div>
@@ -71,7 +71,7 @@
                         <div class="error-message" id="captchaError">
                             <i class="fas fa-exclamation-triangle"></i> Please complete the reCAPTCHA verification.
                         </div>
-                        <button type="submit" class="cta-button" id="submitBtn" style="width:100%;">
+                        <button type="submit" class="cta-button" id="submitBtn" style="width:100%;" disabled>
                             <i class="fas fa-paper-plane"></i> Send Message
                         </button>
                     </div>
