@@ -67,8 +67,11 @@
                             <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"
                                 style="width:100%; padding:0.75rem; margin-top:0.5rem; border-radius:8px; border:1px solid var(--gray-200); font-size:1rem; resize: none;"></textarea>
                         </div>
-                        <div class="g-recaptcha" data-sitekey="6LexW5MrAAAAAIw11dpYcI1Z_fFVEoi2kkEIp8cZ" style="margin: 1rem auto 0 auto; display: block;"></div>
-                        <button type="submit" class="cta-button" style="width:100%;">
+                        <div class="g-recaptcha" id="recaptcha" data-sitekey="6LexW5MrAAAAAIw11dpYcI1Z_fFVEoi2kkEIp8cZ" data-callback="enableSubmitBtn" style="margin: 1rem auto 0 auto; display: block;"></div>
+                        <div class="error-message" id="captchaError">
+                            <i class="fas fa-exclamation-triangle"></i> Please complete the reCAPTCHA verification.
+                        </div>
+                        <button type="submit" class="cta-button" id="submitBtn" style="width:100%;">
                             <i class="fas fa-paper-plane"></i> Send Message
                         </button>
                     </div>
