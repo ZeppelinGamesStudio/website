@@ -6,12 +6,23 @@
     <title>ZeppelinGames - Safe Educational Games for Kids | Trusted by 100k+ Parents</title>
     <meta name="description" content="Discover award-winning educational games that make learning fun! Safe, ad-free, and designed by child development experts. Download now from Google Play.">
     <meta name="keywords" content="educational games for kids, children learning apps, safe games for toddlers, math games, coloring games, memory games">
+    <meta name="author" content="ZeppelinGames">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="ZeppelinGames - Safe Educational Games for Kids">
+    <meta property="og:description" content="Award-winning educational games that make learning fun! Safe, ad-free, and designed by child development experts.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://zeppelingamesstudio.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="icon" href="Icon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Trust Bar -->
     <div class="trust-bar">
         <i class="fas fa-shield-alt"></i>
@@ -19,13 +30,18 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <a href="#home" class="logo">
-                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-gamepad" aria-hidden="true"></i>
                 ZeppelinGames
             </a>
-            <ul class="nav-links">
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#games">Games</a></li>
                 <li><a href="#safety">Safety</a></li>
@@ -33,6 +49,13 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <main id="main-content">
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -148,6 +171,8 @@
             </ul>
         </div>
     </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
