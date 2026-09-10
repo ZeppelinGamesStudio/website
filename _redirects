@@ -1,5 +1,8 @@
-/coloring-game          /privacy-policy   302
-/kids-puzzles-game      /privacy-policy   302
-/memory-game            /privacy-policy   302
-/house-builder-for-kids /privacy-policy   302
-/find-the-differences   /privacy-policy   302
+/privacy-policy        /privacy-policy.html 200
+/privacy-policy-two    /privacy-policy 301
+/privacy-policy-two.html /privacy-policy 301
+/coloring-game          /privacy-policy 301
+/kids-puzzles-game      /privacy-policy 301
+/memory-game            /privacy-policy 301
+/house-builder-for-kids /privacy-policy 301
+/find-the-differences   /privacy-policy 301
